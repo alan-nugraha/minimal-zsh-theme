@@ -41,4 +41,4 @@ git_dirty() {
   fi
 }
 
-PROMPT='%F{blue}%m%f %F{blue}:: %F{green}$(prompt_path)%f${vcs_info_msg_0_}$(git_dirty) %F{blue}»%f '
+PROMPT='%F{blue}$(scutil --get LocalHostName)%f %F{blue}:: %F{green}$(prompt_path)%f${vcs_info_msg_0_}$(git_dirty) %F{blue}»%f '
